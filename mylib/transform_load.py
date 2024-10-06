@@ -7,7 +7,7 @@ import csv
 
 
 # load the csv file and insert into a new sqlite3 database
-def load(dataset="data/US_births_2000-2014_SSA.csv"):
+def load(dataset="data/US_births.csv"):
     """Transforms and Loads data into the local SQLite3 database"""
     payload = csv.reader(open(dataset, newline=""), delimiter=",")
     # skips the header of csv
